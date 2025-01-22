@@ -65,21 +65,6 @@ def handler(event, context):
 # Кнопки использование метода InlineKeyboardMarkup
 @bot.message_handler(commands=['start'])
 def star_and_gen_markup(m):
-    # bot.send_message(m.chat.id, m.from_user.first_name, m.from_user.id)
-    # print(m.from_user.first_name, m.from_user.id)
-    # if not base_data.exist_user(
-    #         m.from_user.id):  # Проверяем есть ли пользователь в БД, если нет то добавляем пользователя
-    #     base_data.add_user(m.from_user.id, m.from_user.first_name)
-    #     sleep(.5)
-    #     bot.send_message(m.chat.id, 'Поздравляю ' + m.from_user.first_name +
-    #                      ' вы добавлены в базу данных.' + '\nТеперь вы авторизированный пользователь')
-    #     sleep(1)
-    #     bot.send_message(m.chat.id, '\U0001F916')
-    #     base_data.close()
-
-    # bot.send_message(m.chat.id,
-    #                  "<i>Здравствуй " + m.chat.first_name + ", " + "добро пожаловать на Drive_bot </i>",
-    #                  parse_mode=['HTML'])
     sleep(1)
     markup = types.InlineKeyboardMarkup()
     bt_weather = types.InlineKeyboardButton("Погода в городе", callback_data="cb_weather")
