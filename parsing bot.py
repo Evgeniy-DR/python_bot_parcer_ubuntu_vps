@@ -18,7 +18,7 @@ BASE_DIR = Path().resolve()
 DIR = os.path.join(BASE_DIR, 'news.txt')
 
 # настройка бота
-token = ('5359383512:AAEmlPEdgp6QR20jE6o8VYvnPCArhuZRGSU')
+token = ('*')
 bot = telebot.TeleBot(token, threaded=False)
 logger = telebot.logger
 telebot.logger.setLevel(logging.DEBUG)
